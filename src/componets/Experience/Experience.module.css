@@ -1,0 +1,64 @@
+@import "../../vars.css";
+
+.container {
+  color: var(--color-text);
+  margin-top: 200px;
+  margin-left: 10%;
+  margin-right: 10%;
+}
+.title {
+  color: var(--color-text);
+  font-size: 30px;
+  font-weight: 700;
+  letter-spacing: 1.75px;
+  text-transform: uppercase;
+}
+.content {
+  display: flex;
+  justify-content: space-evenly;
+  flex-direction: row;
+  margin-top: 14px;
+}
+.skills {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 15px;
+  width: 50%;
+}
+
+.skill {
+  display: flex;
+  align-items: center;
+  gap: 20px;
+  flex-direction: column;
+}
+.skillImageContainer {
+  background-color: var(--color-secondary);
+  border-radius: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 120px;
+  height: 120px;
+}
+.skillImageContainer img {
+  width: 75%;
+}
+.skill p {
+  font-size: 25px;
+  font-family: var(--font-roboto);
+  font-weight: 500;
+}
+
+@media screen and(max-width: 830px) {
+  .content {
+    flex-direction: column;
+    align-items: center;
+    gap: 34px;
+  }
+  .skills {
+    flex-direction: row;
+    width: 100%;
+    justify-content: center;
+  }
+}
